@@ -51,11 +51,25 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let totalAcres = 0
+
+for(let i = 0; i < fujiAcres.length; i++){
+    totalAcres += fujiAcres[i]
+}
+
+for(let i = 0; i < galaAcres.length; i++){
+    totalAcres += galaAcres[i]
+}
+
+for(let i = 0; i < pinkAcres.length; i++){
+    totalAcres += pinkAcres [i]
+}
+   
+console.log(totalAcres)
 
 
 
-
-// PROBLEM 2
+    // PROBLEM 2
 
 /*
     Using `totalAcres`, calculate the average 
@@ -67,11 +81,17 @@ const pinkPrice = .55
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+// CODE 
 
+let averageDailyAcres = 0
 
+ for(let i = 0; i <= totalAcres / 7; i++ ){
+  averageDailyAcres = i
+ }
 
+console.log(averageDailyAcres)
 
+    
 
 // PROBLEM 3
 
@@ -101,15 +121,19 @@ const pinkPrice = .55
     any Math methods. 
 
 */
+   
+ let acresLeft = 174
+ let days = 0
 
-let acresLeft = 174 
-let days = 0
-
-// CODE HERE
-
-
+ // CODE HERE
+while(acresLeft > 0){
+  days++
+acresLeft -= averageDailyAcres
+}
+console.log(days)
 
 // PROBLEM 4
+
 
 /*
     Your next task is to create 3 arrays
@@ -129,20 +153,36 @@ let days = 0
     to make copies of the arrays and 
     then loop the copies. You could also
     make empty arrays, loop the old ones
-    and use the push method to add new 
+    and use the push method to add new  
     values to the new arrays.
 */
+// const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
+// const galaAcres = [5, 2, 4, 3, 6, 2, 4]
+// const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
 
+for(let i = 0; i < fujiAcres.length; i++){
 
+    fujiTons.push(fujiAcres[i]* 6.5)
+}
+console.log(fujiTons)
 
+for(let i = 0; i < galaAcres.length; i++){
 
+    galaTons.push(galaAcres[i]* 6.5)
+}
+console.log(galaTons)
 
+for(let i = 0; i < pinkAcres.length; i++){
+
+    pinkTons.push(pinkAcres[i]* 6.5)
+}
+console.log(pinkTons)
 
 // PROBLEM 5
 
@@ -162,11 +202,27 @@ let days = 0
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = 0;
+let galaPounds = 0;
+let pinkPounds = 0;
 
+for(let i = 0; i < fujiTons.length; i++){
+  fujiPounds += fujiTons[i] * 2000
+  
+}
+console.log(fujiPounds)
 
+for(let i = 0; i < galaTons.length; i++){
+  galaPounds += galaTons[i] * 2000
+
+}
+console.log(galaPounds)
+
+for(let i = 0; i < pinkTons.length; i++){
+  pinkPounds += pinkTons[i] * 2000
+
+}
+console.log(pinkPounds)
 
 
 
@@ -187,15 +243,20 @@ let days = 0
     console. 
 */
 
+// const fujiPrice = .89 
+// const galaPrice = .64
+// const pinkPrice = .55
+
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPrice * fujiPounds
+let galaProfit = galaPrice * galaPounds
+let pinkProfit = pinkPrice * pinkPounds
 
 
-
-
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
 
 // PROBLEM 7
@@ -209,3 +270,7 @@ let days = 0
 */
 
 // CODE HERE
+
+let totalprofit = fujiProfit + galaProfit + pinkProfit
+
+console.log(totalprofit)

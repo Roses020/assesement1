@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-const gitDefinition = "Git is used to tracking changes in the sourcecode and management. it tracks changes in any set of files"
+let gitDefinition = "Git is used to track changes in the sourcecode"
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -19,7 +19,7 @@ const gitDefinition = "Git is used to tracking changes in the sourcecode and man
 */
 
 //CODE HERE
-const gitHubDefinition = " it lets you and others work on projects from anywhere and lets you store your projects. also so others can have acces to your projects"
+let gitHubDefinition = "It lets you and others work on and version control projects from anywhere."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -28,7 +28,7 @@ const gitHubDefinition = " it lets you and others work on projects from anywhere
 */
 
 //CODE HERE
-const gitInitDefinition =" can be used to convert an existing project to a Git repository or initialize a new, empty repository."
+let gitInitDefinition ="Can be used to convert an existing project to a Git repository or initialize a new, empty repository."
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -37,7 +37,7 @@ const gitInitDefinition =" can be used to convert an existing project to a Git r
 */
 
 //CODE HERE
-const gitCloneDefinition = 'is used to point to an exiciting repo and make a clone or copy of that repo in a new directory'
+let gitCloneDefinition = 'Is used to point to an existing repo and make a clone or copy of that repo in a new directory'
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -45,7 +45,7 @@ const gitCloneDefinition = 'is used to point to an exiciting repo and make a clo
 */
 
 //CODE HERE
-const gitStatusDefinition ="displays the state of the working directory and the staging area"
+let gitStatusDefinition ="This command lets you see which changes have been staged or not in the repository."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,8 +57,8 @@ const gitStatusDefinition ="displays the state of the working directory and the 
 */
 
 //CODE HERE
-const gitAddDefinition = " It tells Git that you want to include updates to a particular file in the next commit"
-
+let gitAddDefinition = "It tells Git that you want to include updates to a particular file"
+let gitAddCode = 'git add .'
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -70,7 +70,8 @@ const gitAddDefinition = " It tells Git that you want to include updates to a pa
 
 //CODE HERE
 
-const gitCommitDefinition ="The git commit command saves all currently staged changes of the project."
+let gitCommitDefinition ="The git commit command saves all currently staged changes of the project."
+let gitcommitcode = 'git commit -m  "any message"'
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -78,3 +79,4 @@ const gitCommitDefinition ="The git commit command saves all currently staged ch
 */
 
 //CODE HERE
+let gitPushDefinition = 'takes all of the commited code and saves it to a repository on git hub'
